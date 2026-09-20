@@ -47,7 +47,7 @@ genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # Model name can be changed from Secrets without editing code:
 # GEMINI_MODEL = "gemini-2.5-flash"
-MODEL_NAME = st.secrets.get("GEMINI_MODEL", "gemini-2.5-flash")
+MODEL_NAME = st.secrets.get("GEMINI_MODEL", "gemini-3.6-flash")
 model = genai.GenerativeModel(MODEL_NAME)
 
 
